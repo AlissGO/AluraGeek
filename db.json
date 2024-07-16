@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": "8c2d",
+      "name": "asasd",
+      "price": 244,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCPYxLn69kGkiB2qoNi36f_9dv56FQR-Q3Q&s"
+    },
+    {
+      "id": "b75d",
+      "name": "asasd",
+      "price": 5677,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCPYxLn69kGkiB2qoNi36f_9dv56FQR-Q3Q&s"
+    }
+  ]
+}

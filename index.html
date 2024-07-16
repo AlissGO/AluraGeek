@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge AluraGeek</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="./assets/AluraGeek.jpg" alt="Logo de AluraGeek">
+  </header>
+
+  <main>
+    <section id="product-section">
+      <h1>Mis Productos</h1>
+      <div id="product-list">
+
+        <!-- Aquí se renderizarán dinámicamente los productos -->
+      </div>
+    </section>
+
+    <section id="form-section">
+      <h1>Agregar Producto</h1>
+      <form id="product-form">
+        <input type="text" id="productName" placeholder="Nombre del producto" required>
+        <input type="number" id="productPrice" placeholder="Precio" required>
+        <input type="text" id="productImage" placeholder="URL de la imagen" required>
+        <div>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button> 
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <img src="./assets/footer.png" alt="Logo de AluraGeek en el footer">
+    <p>Desarrollado por Alisson Gamboa</p>
+    <p>&copy; 2024 - AluraGeek</p>
+  </footer>
+
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/createProduct.js"></script>
+</body>
+</html>

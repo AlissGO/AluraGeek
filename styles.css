@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Al menos el 100% de la altura de la ventana visible */
+}
+
+/* Cabecera */
+header {
+  background-color: rgb(168, 113, 118);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+}
+
+/* Contenedor principal */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex: 1; /* Ocupa todo el espacio disponible en el cuerpo */
+  flex-wrap: wrap; /* Permitir que los elementos fluyan a nuevas líneas */
+}
+
+/* Sección de productos */
+#product-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.product-list {
+  display: flex; /* Usar flexbox para distribuir en columnas */
+  flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en nuevas líneas */
+  gap: 20px; /* Espacio entre las tarjetas */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Sección de formulario */
+#form-section {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+}
+
+footer p {
+  margin-left: 10px;
+}
+
+/* Tarjeta de producto */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #333;
+  width: calc(33.33% - 20px); /* Ancho deseado para cada tarjeta, ajustado para tres columnas */
+  margin-bottom: 20px; /* Espacio entre tarjetas */
+}
+
+.card img {
+  max-width: 100%; /* Ajustar imagen al ancho de la tarjeta */
+  height: auto;
+  object-fit: cover; /* Ajustar el tamaño de la imagen manteniendo la relación de aspecto */
+}
+
+.card .card-container--info {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.card .card-container--value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .card-container--value p {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.card .card-container--value img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Media queries para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  main {
+      flex-direction: column;
+  }
+
+  #form-section {
+      margin-left: 0;
+      margin-top: 20px;
+  }
+
+  #product-section {
+      flex: 1;
+      margin-right: 20px;
+      margin-bottom: 20px; /* Espacio inferior entre la sección de productos y otras secciones */
+  }
+
+  .product-list {
+      flex-direction: column; /* Cambiar a una sola columna en pantallas pequeñas */
+  }
+
+  .card {
+      width: 100%; /* Ancho completo en pantallas pequeñas */
+  }
+}
