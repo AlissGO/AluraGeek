@@ -3,6 +3,8 @@ import { createProduct, getProducts, deleteProduct } from './api.js';
 // Seleccionar el formulario y el contenedor de la lista de productos
 const productForm = document.querySelector('#product-form');
 const productList = document.querySelector('#product-list');
+// Trash icon
+const trashIconPath = "./assets/icons8-trash-24.png";
 
 // Función para renderizar los productos en el DOM
 function renderProducts(products) {
@@ -23,7 +25,7 @@ function renderProducts(products) {
         <p>${product.name}</p>
         <div class="card-container--value">
           <p>$ ${product.price.toFixed(2)}</p>
-          <img src="./assets/." alt="Eliminar producto" class="delete-icon" data-id="${product.id}"/>
+          <img src="${trashIconPath}" alt="Eliminar producto" class="delete-icon" data-id="${product.id}"/>
         </div>
       </div>
     `;

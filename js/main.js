@@ -4,6 +4,8 @@ import { getProducts, createProduct } from './api.js';
 
 const productList = document.getElementById('product-list');
 const productForm = document.getElementById('product-form');
+// Trash icon
+const trashIconPath = "./assets/icons8-trash-24.png";
 
 // Función para renderizar los productos en el DOM
 async function renderProducts() {
@@ -26,7 +28,7 @@ async function renderProducts() {
           <p>${product.name}</p>
           <div class="card-container--value">
             <p>$${product.price.toFixed(2)}</p>
-            <img src="./assets/trashIcon.png"/>
+            <img src="${trashIconPath}"/>
           </div>
         </div>
       `;

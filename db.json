@@ -1,16 +1,10 @@
 {
   "products": [
     {
-      "id": "8c2d",
-      "name": "asasd",
-      "price": 244,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCPYxLn69kGkiB2qoNi36f_9dv56FQR-Q3Q&s"
-    },
-    {
-      "id": "b75d",
-      "name": "asasd",
-      "price": 5677,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCPYxLn69kGkiB2qoNi36f_9dv56FQR-Q3Q&s"
+      "id": "6c23",
+      "name": "Ambar",
+      "price": 54154,
+      "image": "https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1900&h=1267"
     }
   ]
 }

@@ -82,6 +82,7 @@ footer p {
   background-color: #333;
   width: calc(33.33% - 20px); /* Ancho deseado para cada tarjeta, ajustado para tres columnas */
   margin-bottom: 20px; /* Espacio entre tarjetas */
+  font-family: 'Roboto', sans-serif; /* Fuente personalizada */
 }
 
 .card img {
@@ -94,6 +95,9 @@ footer p {
   flex: 1;
   text-align: center;
   color: #fff;
+  font-size: 1.1em; /* Tamaño de fuente */
+  font-weight: 400; /* Peso de la fuente */
+  line-height: 1.5; /* Altura de línea */
 }
 
 .card .card-container--value {
@@ -105,6 +109,8 @@ footer p {
 .card .card-container--value p {
   margin-right: 10px;
   color: #fff;
+  font-size: 1em; /* Tamaño de fuente */
+  font-weight: 300; /* Peso de la fuente */
 }
 
 .card .card-container--value img {
@@ -112,6 +118,10 @@ footer p {
   height: 20px;
   cursor: pointer;
 }
+
+/* Fuente personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 
 /* Media queries para pantallas pequeñas */
 @media screen and (max-width: 768px) {
